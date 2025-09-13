@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StopHarming.Me - Imagine Therapuetic Services</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1000px;
+      padding: 2rem;
+      background: black;
+      border: 10px solid #000;
+      position: relative;
+    }
+
+    .container::before,
+    .container::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      z-index: 1;
+    }
+
+    .container::before {
+      top: 0;
+      left: 0;
+      background: linear-gradient(45deg, red 50%, transparent 50%);
+    }
+
+    .container::after {
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(45deg, transparent 50%, red 50%);
+    }
+
+    .content {
+      border: 10px solid blue;
+      padding: 2rem;
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 25%;
+      max-width: 200px;
+      border-radius: 50%;
+      border: 4px solid red;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+
+    h1 {
+      color: red;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-decoration: underline;
+    }
+
+    .red-text {
+      color: red;
+      font-size: 1.5rem;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+    }
+
+    .white-text {
+      color: white;
+      font-size: 1.3rem;
+      line-height: 1.6;
+      font-weight: bold;
+    }
+
+    .continue-btn {
+      margin-top: 1.5rem;
+      background-color: red;
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .continue-btn:hover {
+      background-color: darkred;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .red-text {
+        font-size: 1.2rem;
+      }
+      .white-text {
+        font-size: 1.1rem;
+      }
+      .profile-img {
+        width: 40%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <!-- CIRCULAR IMAGE -->
+      <img src="/images/20221020_094257_11.png" alt="Profile Image" class="profile-img" />
+
+      <h1>Imagine Therapuetic Services</h1>
+
+      <div class="red-text">
+        I was a client of Imagine Therapuetic Services from Feb. 2021-July 2025 (4+ years of my life, age 24-28)<br>
+        I was dependent on them for everything in my daily living.<br>
+        They never respected my independence, agency, or autonomy.<br>
+        Since day one of living in their 24/7 staff supported housing arrangement I knew it was not the right fit but was coerced to remain living with them by family and circumstances out of my control.
+      </div>
+      <div class="white-text">
+        Imagine Therapuetic Services often weaponzied my medical history against me through coercive conditional care.<br>
+        I have been saying since May 2025 that I was being neglected by them.<br>
+        They never listened to any of my concerns about my quality of life, and discarded my humanity like trash.<br>
+        You can see my entire Google Drive folder of documentation, as I anticipated Imagine would kick me out. I was trying everything I could think to do to advocate for my rights and they completely disregarded my boundaries as an adult in their supposed care.<br>
+        Link to the Drive Folder found <a href="https://drive.google.com/drive/folders/1pvUYpBzoYhTSPigD5ffIcxf1YTxxTkba?usp=drive_link">HERE</a>
+      </div>
+
+       <!-- CONTINUE BUTTON -->
+      <button class="continue-btn" onclick="location.href='/table-of-content.html'">Continue</button>
+      
+    </div>
+  </div>
+</body>
+</html>
