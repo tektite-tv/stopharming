@@ -1,1 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StopHarming.Me - Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
 
+    .container {
+      max-width: 1000px;
+      padding: 2rem;
+      background: black;
+      border: 10px solid #000;
+      position: relative;
+    }
+
+    .container::before,
+    .container::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      z-index: 1;
+    }
+
+    .container::before {
+      top: 0;
+      left: 0;
+      background: linear-gradient(45deg, red 50%, transparent 50%);
+    }
+
+    .container::after {
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(45deg, transparent 50%, red 50%);
+    }
+
+    .content {
+      border: 10px solid blue;
+      padding: 2rem;
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 25%;
+      max-width: 200px;
+      border-radius: 50%;
+      border: 4px solid red;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+
+    h1 {
+      color: red;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-decoration: underline;
+    }
+
+    .red-text {
+      color: red;
+      font-size: 1.5rem;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+    }
+
+    .white-text {
+      color: white;
+      font-size: 1.3rem;
+      line-height: 1.6;
+      font-weight: bold;
+    }
+
+    .continue-btn {
+      margin-top: 1.5rem;
+      background-color: red;
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .continue-btn:hover {
+      background-color: darkred;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .red-text {
+        font-size: 1.2rem;
+      }
+      .white-text {
+        font-size: 1.1rem;
+      }
+      .profile-img {
+        width: 40%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <!-- CIRCULAR IMAGE -->
+      <img src="/images/20221020_094257_11.png" alt="Profile Image" class="profile-img" />
+
+      <h1>Chapter 1</h1>
+
+      <div class="red-text">
+      Introduction to the Care Industry
+      </div>
+
+      <div class="white-text">
+      My involvement with Ontario’s care industry began when I was 17, after my first psychiatric hospitalization. That moment marked the start of a system-driven journey I never chose—one that’s continued for over eleven years.
+
+Instead of being supported by my parents during that time, I was treated like a financial burden. Because I didn’t have a job and couldn’t contribute to the household, their priority became getting me labeled as disabled—pushed into the ODSP system as quickly as possible. There was no focus on healing, no encouragement for my mental health. Just paperwork, pressure, and survival.
+
+Eventually, I was funneled into two separate diagnoses, each with its own disconnected and contradictory support systems. Instead of care, I found chaos. Instead of clarity, confusion.
+
+The system was never designed to be navigated by people like me. It was built to categorize, deflect, and delay. And somewhere between all the forms and false hope, I stopped being seen as a person.
+
+This chapter begins where the help was supposed to start—but never did.
+      </div>
+
+       <!-- CONTINUE BUTTON -->
+      <button class="continue-btn" onclick="location.href='/index.html'">Home</button><br>
+      <button class="continue-btn" onclick="location.href='/chapter02'">Chapter 2</button>
+      
+    </div>
+  </div>
+</body>
+</html>
