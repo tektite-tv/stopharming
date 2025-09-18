@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StopHarming.Me - Chapter 3</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1000px;
+      padding: 2rem;
+      background: black;
+      border: 10px solid #000;
+      position: relative;
+    }
+
+    .container::before,
+    .container::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      z-index: 1;
+    }
+
+    .container::before {
+      top: 0;
+      left: 0;
+      background: linear-gradient(45deg, red 50%, transparent 50%);
+    }
+
+    .container::after {
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(45deg, transparent 50%, red 50%);
+    }
+
+    .content {
+      border: 10px solid blue;
+      padding: 2rem;
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 25%;
+      max-width: 200px;
+      border-radius: 50%;
+      border: 4px solid red;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+
+    h1 {
+      color: red;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-decoration: underline;
+    }
+
+    .red-text {
+      color: red;
+      font-size: 1.5rem;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+    }
+
+    .white-text {
+      color: white;
+      font-size: 1.3rem;
+      line-height: 1.6;
+      font-weight: bold;
+    }
+
+    .continue-btn {
+      margin-top: 1.5rem;
+      background-color: red;
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .continue-btn:hover {
+      background-color: darkred;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .red-text {
+        font-size: 1.2rem;
+      }
+      .white-text {
+        font-size: 1.1rem;
+      }
+      .profile-img {
+        width: 40%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Chapter 3 – Imagine Therapeutic Services</h1>
+
+      <div class="red-text">
+      A Place I Trusted, A Cage I Couldn’t See
+      </div>
+
+      <div class="white-text">
+Full documentation of systemic neglect here: <a href="https://drive.google.com/drive/folders/1pvUYpBzoYhTSPigD5ffIcxf1YTxxTkba?usp=drive_link"></a>
+
+      When I first arrived at Imagine Therapeutic Services, I believed—truly believed—that this might be the turning point. That here, maybe, I’d find a place to live and grow. Somewhere to stabilize, to feel safe. Somewhere human.
+
+What I found instead was four years of subtle coercion and institutional gaslighting. A kind of conditional care that presented itself as benevolence, but operated more like soft incarceration. My needs were filtered through policy. My pain was treated like a disruption. And my voice? Ignored until it became inconvenient—and then punished.
+
+The moment I began to assert boundaries, to speak plainly about the conditions I was surviving, the mask slipped. I went from “resident” to “problem.” Every effort I made to document their neglect—to collect receipts and call out the damage—was met with silence. Not just from Imagine, but from every supposed oversight body I reached out to. No one wanted to take responsibility. No one believed me.
+
+They were comfortable with me being voiceless. So long as I followed the rules, so long as I didn’t challenge the illusion, it was easy for them to pretend they were helping. On paper, I had “supports.” In reality, I had no agency, no autonomy, and no way out without sacrificing my stability.
+
+It was like living under invisible house arrest. Every choice I made was filtered through the fear of losing housing. Every complaint risked retaliation. I was compliant because I had to survive. I was silent because survival demanded it.
+
+And when I finally did speak up, I wasn’t met with care. I was met with consequences.
+
+To this day, no one has been held accountable. The system that props up organizations like Imagine doesn’t ask hard questions. It sees paperwork, not people. Stability, not dignity. As long as the forms are filled and the beds are occupied, the deeper truths don’t matter.
+
+But I lived it. I remember it. And I’m writing it down because the record matters—even if they’ll never admit what they did.
+      </div>
+
+       <!-- CONTINUE BUTTON -->
+      <button class="continue-btn" onclick="location.href='/chapter02.html'">Chapter 2</button><br>
+      <button class="continue-btn" onclick="location.href='/chapter04'">Chapter 4</button>
+      
+    </div>
+  </div>
+</body>
+</html>
