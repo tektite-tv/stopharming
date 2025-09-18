@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StopHarming.Me - Home</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background: black;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1000px;
+      padding: 2rem;
+      background: black;
+      border: 10px solid #000;
+      position: relative;
+    }
+
+    .container::before,
+    .container::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      z-index: 1;
+    }
+
+    .container::before {
+      top: 0;
+      left: 0;
+      background: linear-gradient(45deg, red 50%, transparent 50%);
+    }
+
+    .container::after {
+      bottom: 0;
+      right: 0;
+      background: linear-gradient(45deg, transparent 50%, red 50%);
+    }
+
+    .content {
+      border: 10px solid blue;
+      padding: 2rem;
+      position: relative;
+      z-index: 2;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 25%;
+      max-width: 200px;
+      border-radius: 50%;
+      border: 4px solid red;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+
+    h1 {
+      color: red;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-decoration: underline;
+    }
+
+    .red-text {
+      color: red;
+      font-size: 1.5rem;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+    }
+
+    .white-text {
+      color: white;
+      font-size: 1.3rem;
+      line-height: 1.6;
+      font-weight: bold;
+    }
+
+    .continue-btn {
+      margin-top: 1.5rem;
+      background-color: red;
+      color: white;
+      padding: 0.8rem 1.6rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    .continue-btn:hover {
+      background-color: darkred;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .red-text {
+        font-size: 1.2rem;
+      }
+      .white-text {
+        font-size: 1.1rem;
+      }
+      .profile-img {
+        width: 40%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Chapter 2 – My Experience with CMHA Muskoka Parry Sound</h1>
+
+      <div class="red-text">
+      Absent-Minded Silence.
+      </div>
+
+      <div class="white-text">
+      From the age of 17, after my first psychiatric hospitalization, CMHA Muskoka Parry Sound entered my life—not as a support system, but as a cold procedural mechanism. There was never consistent direction, never a clear through-line of care. Their model of “support” felt like a bureaucratic algorithm run by people who never saw me—only diagnosis codes, case file numbers, and liability shields.
+
+Appointments were made arbitrarily, as if by script. I wasn’t asked what I needed. I was told what box I belonged in. The environment? Sterile. Clinical. A waiting room of tick-boxes and legalese.
+
+It wasn’t just the absence of compassion. It was the active draining of humanity from every interaction. Every note they wrote, every checkbox they filled out—it all felt like it existed solely to protect them from being blamed for the inevitable harm caused by their negligence.
+
+If I brought up my autonomy, it was ignored. If I expressed distress, it was pathologized. Not once did I feel like I had an advocate within CMHA. Instead, I was a case to be managed, a liability to be minimized, a ghost in a hallway of mental health branding.
+
+The paradox is this: They call it “community” mental health, but at no point did I ever feel part of a community. There was no flexibility. No nuance. No follow-up that respected my rhythm or needs. Just “service delivery” by rote, wrapped in the language of care, but hollow to the core.
+
+In hindsight, it feels like I was processed, not supported. And the absence of real care—the kind that listens, responds, and remembers—only deepened my sense of alienation. Their silence wasn’t passive. It was policy.
+      </div>
+
+       <!-- CONTINUE BUTTON -->
+      <button class="continue-btn" onclick="location.href='/chapter01.html'">Chapter 1</button><br>
+      <button class="continue-btn" onclick="location.href='/chapter03'">Chapter 3</button>
+      
+    </div>
+  </div>
+</body>
+</html>
